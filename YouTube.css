@@ -2,8 +2,7 @@
     display: block;
 }
 .thumbnail{
-    width: 300px;
-    display: block;
+    width: 100%;
 }
 P{
     font-family: 'Roboto', sans-serif;
@@ -25,13 +24,18 @@ P{
 .vedio-creator{
     margin-bottom: 4px;
 }
-
-.vedio-preview{
-    width:300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
+.vedio-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 17px;
+    row-gap: 41px;
 }
+
+.vedio-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr ;
+}
+
 .channel-pic{
     display: inline-block;
     width: 50px;

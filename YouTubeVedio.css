@@ -19,8 +19,11 @@
 .vedio-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 17px;
-    row-gap: 41px;
+    column-gap: 16px;
+    row-gap: 40px;
+    /* font-family: 'Roboto', sans-serif; */
+    /* text-decoration: underline;
+    border: 2px solid red;  inheritance*/
 }
 
 .vedio-info-grid{
@@ -38,15 +41,16 @@
     position: relative;
 }
 .vedio-time{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 12px;
     font-weight: 500;
     background-color: black;
     color: white;
-    padding-left: 2px;
+    /* padding-left: 2px;
     padding-right: 2px;
     padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 4px; */
+    padding: 4px;
     border-radius: 2px;
     position: absolute;
     bottom: 8px;
@@ -59,4 +63,19 @@
 #profile-pic{
     width: 36px;
     border-radius: 20px;
+}
+@media (max-width: 750px) {
+    .vedio-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width:999px){
+    .vedio-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .vedio-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
